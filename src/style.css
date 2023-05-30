@@ -9,7 +9,7 @@ section{
 
 .hero{
     background-color: #1c1d25;
-    height: 100vh;
+    height: 80vh;
     color: white;
     font-size: 30px;
 }
@@ -18,7 +18,6 @@ footer {
     color: white;
     background-color: black;
     text-align: center;
-    padding: 70px;
 }
 
 nav{
@@ -49,8 +48,9 @@ p{
     font-weight: 300;
 }
 .hero-text{
-    margin-left: 80px;
-    margin-bottom: 200px;
+    padding: auto;
+    margin-left: 5%;
+    margin-top: 10%;
 }
 
 .button{
@@ -67,7 +67,7 @@ p{
 
 .hero-area{
     display: flex;
-    height: 100%;
+    height: 50%;
     justify-content: space-between;
     align-items: center;
 }
@@ -82,7 +82,12 @@ p{
 }
 
 .socials{
-    padding-bottom: 200px;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: inherit;
+    justify-content:center;
+    margin-bottom: 5%;
 }
 
 .logo{
@@ -125,28 +130,21 @@ h2{
 }
 
 .project-card{
-    display: inline;
-    width: 1350px;
-    height: 200px;
-    justify-content: space-around;
-    box-shadow: 5px 5px 20px grey;
-    margin-left: 5px;
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 .sub-section-alternative{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 80px;
-    padding-top: 10px;
 }
 
 .skills{
     display: flex;
     flex-direction: row;
     height: 120px;
-    padding: 35px;
     justify-content: space-around;
 }
 
@@ -166,8 +164,7 @@ a{
     /* position: absolute; */
     width: 225px;
     height: 250px;
-    margin-bottom: 170px;
-    margin-left: 0%;
+    margin-top: 50%;
     /* transform: translate(10px,10px); */
     border: 6px solid white;
     border-radius: 60%;
@@ -189,6 +186,20 @@ a{
 
 .projects{
     display: flex;
+    /* flex-wrap: wrap;
+    overflow-wrap:normal; */
+    flex-shrink: inherit;
     flex-direction: column;
-    overflow:auto;
+    /* overflow:auto; */
+}
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h3{
+    font-size: 40px;
+    margin-top: 2%;
 }
