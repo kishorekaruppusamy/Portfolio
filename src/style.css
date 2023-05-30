@@ -2,14 +2,14 @@
     font-family: 'Dancing Script', cursive;
 }
 section{
-    height: 500px;
+    height: 600px;
     background-color: white;
     border: solid black 1px;
 }
 
 .hero{
     background-color: #1c1d25;
-    height: 80vh;
+    height: 85vh;
     color: white;
     font-size: 30px;
 }
@@ -103,7 +103,7 @@ p{
 .sub-section{
     display: flex;
     text-align: justify;
-    justify-content: space-around;
+    justify-content: center;
     padding: 80px;
 }
 
@@ -137,6 +137,7 @@ h2{
 
 .sub-section-alternative{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     text-align: center;
 }
