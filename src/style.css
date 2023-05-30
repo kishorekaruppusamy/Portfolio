@@ -9,7 +9,7 @@ section{
 
 .hero{
     background-color: #1c1d25;
-    height: 85vh;
+    height: 98vh;
     color: white;
     font-size: 30px;
 }
@@ -158,6 +158,12 @@ a{
     .project-card{
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width: 400px){
+    .hero{
+        height: 60vh;
     }
 }
 
