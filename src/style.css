@@ -1,4 +1,4 @@
-body{
+ body{
     font-family: 'Dancing Script', cursive;
 }
 section{
@@ -15,9 +15,10 @@ section{
 }
 
 footer {
-    height: 500px;
-
+    color: white;
     background-color: black;
+    text-align: center;
+    padding: 70px;
 }
 
 nav{
@@ -115,6 +116,7 @@ h2{
 .headshot-container{
     display: flex;
     align-items: center;
+    width: 500px;
 }
 
 .about-content
@@ -123,8 +125,10 @@ h2{
 }
 
 .project-card{
+    display: inline;
     width: 1350px;
     height: 200px;
+    justify-content: space-around;
     box-shadow: 5px 5px 20px grey;
     margin-left: 5px;
     margin-top: 15px;
@@ -144,4 +148,47 @@ h2{
     height: 120px;
     padding: 35px;
     justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px){
+    .project-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.circle {
+    /* position: absolute; */
+    width: 225px;
+    height: 250px;
+    margin-bottom: 170px;
+    margin-left: 0%;
+    /* transform: translate(10px,10px); */
+    border: 6px solid white;
+    border-radius: 60%;
+    background-image: radial-gradient(rgba(193,146,234),rgba(123,165,223));
+    filter: drop-shadow(0 10px 10px rgb(58, 57, 58));
+    animation-name: float;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    /* display: none; */
+}
+
+@keyframes float {
+    0%{}   
+    50%{ filter: drop-shadow(0 50px 0px rgb(121, 60,175,0.0)); 
+        transform: translate(0,-50px);}
+    100%{filter: drop-shadow(0 10px 10px rgb(39, 38, 40));}
+    
+}
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    overflow:auto;
 }
